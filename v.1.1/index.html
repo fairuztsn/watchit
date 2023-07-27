@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>watchit - animelist</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="icon" href="assets/images/icon.png">
+        
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="row info">
+            <div class="col-12 col-sm-12">
+                <p><i class="fas fa-bell"></i>&nbsp;&nbsp;Click here to see announcement</p>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="row">
+                <div class="col-8 col-sm-12 formt">
+                    <form action="" class="form">
+                        <input type="text" name="anime" id="" placeholder="Search Anime">
+                        &nbsp;
+                        <i class="fas fa-search"></i>
+                        <!--Typenya gatau-->
+                    </form>
+                </div>
+                <div class="col-4 col-sm-12 profilediv">
+                    <div class="profile">
+                        <img src="assets/images/profile.png" alt="" class="profpict">
+                        <p>fairuz</p>
+                        <i class="fas fa-cog"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="premium">
+            <div class="row">
+                <div class="col-8 prem">
+                    <p class="premium-title">
+                        Premium
+                    </p>
+                    <p class="premium-desc">
+                        Tired of seeing ads?
+                        Let's buy our premium
+                        <span>Starts from $0.70</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection">
+            <div class="row">
+                <div class="col-12 select-list">
+                    <ul>
+                        <li class="selected">Anime</li>
+                        <li>Movies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 last-watched">
+                <img src="assets/images/domestickanojo.png" class="lw-img" alt="">
+                <div class="lw-desc">
+                    <p class="lw-title">Last Watched</p>
+                    <p class="lw-anime-title">Domestic na Kanojo</p>
+                </div>
+                <i class="fas fa-play"></i>
+            </div>
+        </div>
+
+        <div class="genre">
+            <div class="row genre-title">
+                <div class="col-12">
+                    <h2>Genres <span class="genre-con">See All <i class="fas fa-angle-right"></i></span> </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 genre-list">
+                    <ul>
+                        <script>
+                            genres = [
+                            'Action', 'Adventure', 'Comedy', 'Romance'];
+
+                            for(let i = 0; i <genres.length; i ++) {
+                                document.write(`
+                                    <li>${genres[i]}</li>
+                                `);
+                            }
+                        </script>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="new-ep">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="new-ep-title">New Episodes <i class="fas fa-redo"></i><span class="see-schedule">See Schedule <i class="fas fa-angle-right"></i></span> </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 anime-list">
+                    <script>
+                        new_ep = [10,6,8,8,8,225,1000,16,7];
+
+                        new_ep_title = [
+                        'Getsuyoubi no Tawawa Season 2', 'Kimetsu no Yaiba: Mugen Ressha-hen', 'Tsuki to Laika to Nosferatu', 'Mushoku Tensei: Isekai Ittara Honki Dasu Season 2', 'Mieruko-chan', 'Boruto', 'One Piece', 'Jahy-sama wa Kujikenai', 'World Trigger Season 3'
+                        ];
+
+                        file_dir = [
+                        'getsuyoubinotawawa2', 'kny', 'TsukitoLaika', 'mushokutensei', 'mierukochan', 'boruto', 'onepiece', 'jahysama', 'worldtriggers3'
+                        ];
+
+                        for(let i = 2; i < new_ep.length; i += 3) {
+                            document.write(`
+                            <ul>
+                                <li>
+                                    <img src="assets/images/${file_dir[i-2]}.png" alt="" class="anime-img">
+                                    <p class="anime-title">${new_ep_title[i-2]}</p>
+                                    <p class="anime-ep">Episode ${new_ep[i-2]}</p>
+                                </li>
+                                <li>
+                                    <img src="assets/images/${file_dir[i-1]}.png" alt="" class="anime-img">
+                                    <p class="anime-title">${new_ep_title[i-1]}</p>
+                                    <p class="anime-ep">Episode ${new_ep[i-1]}</p>
+                                </li>
+                                <li>
+                                    <img src="assets/images/${file_dir[i]}.png" alt="" class="anime-img">
+                                    <p class="anime-title">${new_ep_title[i]}</p>
+                                    <p class="anime-ep">Episode ${new_ep[i]}</p>
+                                </li>
+                            </ul>   
+                            `);
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="premium">
+            <div class="row">
+                <div class="col-8 prem">
+                    <p class="premium-title">
+                        Release Schedule
+                    </p>
+                    <p class="premium-desc">
+                        Don't know when the anime release?
+                        <span>Click here</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trending">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="trending-title">
+                        <i class="fas fa-fire"></i>&nbsp;&nbsp;Trending
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 trend-list">
+                    <ul>
+                        <li>
+                            <img src="assets/images/onepiece.png" alt="" class="anime-img">
+                            <p class="anime-title">One Piece</p>
+                            <p class="anime-ep">78249 views</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/ansatsukizoku.png" alt="" class="anime-img">
+                            <p class="anime-title">Ansatsu Kizoku</p>
+                            <p class="anime-ep">61814 views</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/boruto.png" alt="" class="anime-img">
+                            <p class="anime-title">Boruto</p>
+                            <p class="anime-ep">56162 views</p>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+
+        <div class="finished-anime">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="finished-title">
+                        Completed Anime <span>See All <i class="fas fa-angle-right"></i></span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 finished-list">
+                    <ul>
+                        <li>
+                            <img src="assets/images/kaguyas2.png" alt="" class="anime-img">
+                            <p class="anime-title">Kaguya-sama: Love is War Season 2</p>
+                            <p class="anime-ep">12 Episodes</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/kanojookarishimasu.png" alt="" class="anime-img">
+                            <p class="anime-title">Kanojo, Okarishimasu</p>
+                            <p class="anime-ep">12 Episodes</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/horimiya.png" alt="" class="anime-img">
+                            <p class="anime-title">Horimiya</p>
+                            <p class="anime-ep">13 Episodes</p>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                <code>
+                member = [
+                    'Dhafin Qinthara Khalish (6)',
+                    'Fairuztsani Kemal Setiawan (9)',
+                    'Muhammad Favian Jiwani (20)'
+                ];
+
+                <br><br>
+
+                watchit is an illegal streaming website made by ${member} in purpose of schoolwork.
+            </code>
+            </p>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/ff535c21a2.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

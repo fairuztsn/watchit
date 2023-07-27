@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    user-select: none;
+    background-color: #1D1C29;
+    color: #fec108;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info {
+    padding: 10px;
+}
+
+.info p {
+    transition: 0.2s;
+}
+.info p:hover, .profile:hover, .prem:hover, .select-list li:hover, .last-watched:hover, .fa-search:hover, .genre-con:hover, .finished-list li:hover, .trend-list li:hover {
+    cursor: pointer;
+}
+
+.info p:active, .profile:active, .prem:active, .select-list li:active, .last-watched:active, .fa-search:active, .genre-con:active, .finished-list li:active, .trend-list li:active {
+    transform: scale(0.95);
+}
+
+.form input::placeholder {
+    color: #fefeff;
+    font-size: 15px;
+}
+
+.form input {
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+    outline: none;
+    border: none;
+    background-color: #29293c;
+}
+
+.formt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    border: 2px solid #fec108;
+    width: 150px;
+    padding: 12px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.profpict {
+    border-radius: 50%;
+    height: 35px; width: 35px;
+}
+
+.profile p {
+    position: relative;
+    left: 20px;
+    top: 6px;
+    color: #fefeff;
+}
+
+.profile i {
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+
+.premium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 280px;
+}
+.prem {
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: 0.2s;
+}
+.prem, .premium-desc, .premium-title{
+    background-color: #29293c;
+}
+.premium-desc {
+    color: #fefeff;
+}
+.premium-desc span {
+    font-size: 10px;
+}
+
+.select-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select-list ul{
+    display: flex;
+}
+.select-list li {
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.selected {
+    border-bottom: 2px solid #fec108;
+}
+
+.select-list li {
+    list-style: none;
+    margin: 30px;
+    color: #fefeff;
+}
+
+.last-watched {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.lw-img {
+    width: 240px; height: 135px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.lw-desc {
+    margin-right: 50px;
+}
+.lw-anime-title {
+    color: #fefeff;
+
+}
+.fa-play {
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #fefeff;
+}
+
+.genre {
+    padding-top: 100px;
+}
+.genre-title {
+    text-align: center;
+}
+.genre-title h2 {
+    color: #fefeff;
+}
+
+.genre-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.genre-list li {
+    list-style: none;
+    margin: 5px;
+    background-color: #29293c;
+    padding: 15px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.2s;
+}
+
+.genre-con {
+    font-size: 15px;
+    margin-left: 90px;
+}
+
+.genre-list li:hover {
+    background-color: #484952;
+}
+.genre-list li:active {
+    background-color: #484952;
+    transform: scale(0.95);
+}
+
+.fas-redo {
+    color: #fec108;
+}
+
+.new-ep {
+    padding-top: 50px;
+}
+.new-ep-title {
+    color: #fefeff;
+    text-align: center;
+}
+
+.new-ep-title span {
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+.anime-list li {
+    list-style: none;
+    transform: scale(0.85);
+    transition: 0.2s;
+}
+.anime-list li:active {
+    transform: scale(0.8);
+}
+.anime-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.anime-img {
+    width: 225px; height: 318px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.anime-title {
+    color: #fefeff;
+    max-width: 200px;
+    margin-top: 30px;
+}
+
+.trend-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+}
+.trend-list li {
+    list-style: none;
+    margin: 20px;
+    transition: 0.2s;
+}
+
+.trending-title {
+    color: #fefeff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.fa-fire {
+    color: darkorange;
+}
+
+.finished-title {
+    color: #fefeff;
+    text-align: center;
+}
+
+.finished-title span {
+    font-size: 15px;
+}
+
+.finished-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+}
+
+.finished-list li {
+    list-style: none;
+    margin-right: auto;
+    margin: 20px;
+    transition: 0.2s;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+.fa-play {
+    color: #fec108;
+}

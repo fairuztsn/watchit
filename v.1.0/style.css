@@ -1,0 +1,98 @@
+html {
+    padding: 0;
+    margin: 0;
+ font-family: 'Outfit', sans-serif;;
+}
+.header {
+    width: 100%;
+}
+
+.fa-bars, .fa-search, .series, .movie {
+    transition: 0.2s;
+} 
+.fa-search:active, .fa-bars:active, .series:active, .movie:active {
+    transform: scale(0.9);
+}
+
+#bord {
+    padding: 10px;
+    font-size: 20px;
+}
+
+#co {
+    text-align: center;
+    opacity: 0.9;
+    padding-top: 12px;
+}
+
+.sub-title {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-top: 30px;
+
+}
+.popular-anime ul li {
+    list-style: none;
+}
+.det-anime {
+    display: flex;
+    margin-top: 30px;
+    transition: 0.2s;
+}
+.det-anime:active, .video:active {
+    transform: scale(0.95);
+}
+.det-anime img {
+    height: 40%;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.desc-anime {
+	margin-top: 20px;
+    transform: scale(0.9);
+    padding-top: 20px;
+    padding-left: 12px;
+    text-align: left;
+}
+.desc-anime h3 {
+    font-size: 20px;
+}
+.fa-star {
+    color: yellow;
+}
+
+
+	margin-top:5px;
+score {
+    font-size: 15px;
+}
+
+.video {
+    transition: 0.2s;
+}
+.video img {
+    border-radius: 10px;
+    height: 81px; width: 144px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.video p {   
+
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.views {
+    opacity: 0.7;
+}
+
+footer {
+    display: flex;
+    align-items: center; justify-content: center;
+    background-color: #0075F2;
+    color: white;
+    margin-top: 40px;
+    height: 50px;
+    margin-bottom: 0;
+}

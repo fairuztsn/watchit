@@ -1,0 +1,42 @@
+@media all and (max-width: 400px) {
+    .form input {
+        width: 200px;
+    }
+    .profilediv {
+        transform: scale(0.7);
+        position: relative;
+        right: 30px;
+    }
+
+    .premium {
+        padding-top: 20px;
+        width: 800px;
+    }
+    .selection {
+        font-size: 25px;
+        padding-right: 15px;
+    }
+    
+    .last-watched {
+        transform: scale(0.8);
+    }
+    .last-watched:active {
+        transform: scale(0.75);
+    }
+    .genre-list{
+        transform: scale(0.8);
+        position: relative;
+        right: 15px;
+    }
+    .anime-img {
+        height: 159px; width: 112.5px;
+    }
+    .anime-list ul, .trend-list ul, .finished-list ul {
+        position: relative;
+        right: 15px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+}
